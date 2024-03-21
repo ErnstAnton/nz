@@ -5,8 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neuseelandreise</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+        <script defer src="main.js"></script>
+
 
     <script src="main.js"></script>
 </head>
@@ -47,21 +57,23 @@
                         Kiwi_Lisa@pixabay </a>)</figcaption>
             </figure>
 
-            <h3>Links</h3>
+            <h3>Übersichtskarte</h3>
+            <div id="map"></div>
+                <h3>Links</h3>
 
-            <ul>
-                <li><a href="https://www.newzealand.com/de/picton/"> Website Neuseeland</a></li>
-                <li><a
-                        href="https://www.booking.com/city/nz/picton.de.html?aid=349015&pagename=picton&label=msn-AZlaeJW6c9Z4FBMn5HXWfw-80127083374273:tikwd-80127237108792:loc-10:neo:mte:lp146440:dec:qspicton&utm_campaign=New%20Zealand&utm_medium=cpc&utm_source=bing&utm_term=AZlaeJW6c9Z4FBMn5HXWfw&msclkid=2116bc1233fa1216bb0fd9fbcb7ab46f&utm_content=Picton%20-%20UFI%3A900039049">
-                        Hotels in Picton </a></li>
-                <li><a
-                        href="https://www.getyourguide.de/-l32311/?cmp=bing&cmp=bing&ad_id=78134249582996&adgroup_id=1250145369335975&bid_match_type=be&campaign_id=710111671&device=c&feed_item_id=&keyword=picton&loc_interest_ms=2500&loc_physical_ms=146440&match_type=e&msclkid=b6e130154b041e04159955fcb3848eba&network=o&partner_id=CD951&target_id=kwd-78134458420535&utm_adgroup=lc%3D32311%3Apicton%7Cfn%3Df3%7Cci%3D937%3Athings%20to%20do&utm_campaign=dc%3D7%3Anz%7Clc%3D32311%3Apicton%7Cct%3Dcore%7Cln%3D39%3Ade%7Ctc%3Dall&utm_keyword=picton&utm_medium=paid_search&utm_query=picton&utm_source=bing">
-                        Aktivitäten in Picton buchen</a></li>
-            </ul>
+                <ul>
+                    <li><a href="https://www.newzealand.com/de/picton/"> Website Neuseeland</a></li>
+                    <li><a
+                            href="https://www.booking.com/city/nz/picton.de.html?aid=349015&pagename=picton&label=msn-AZlaeJW6c9Z4FBMn5HXWfw-80127083374273:tikwd-80127237108792:loc-10:neo:mte:lp146440:dec:qspicton&utm_campaign=New%20Zealand&utm_medium=cpc&utm_source=bing&utm_term=AZlaeJW6c9Z4FBMn5HXWfw&msclkid=2116bc1233fa1216bb0fd9fbcb7ab46f&utm_content=Picton%20-%20UFI%3A900039049">
+                            Hotels in Picton </a></li>
+                    <li><a
+                            href="https://www.getyourguide.de/-l32311/?cmp=bing&cmp=bing&ad_id=78134249582996&adgroup_id=1250145369335975&bid_match_type=be&campaign_id=710111671&device=c&feed_item_id=&keyword=picton&loc_interest_ms=2500&loc_physical_ms=146440&match_type=e&msclkid=b6e130154b041e04159955fcb3848eba&network=o&partner_id=CD951&target_id=kwd-78134458420535&utm_adgroup=lc%3D32311%3Apicton%7Cfn%3Df3%7Cci%3D937%3Athings%20to%20do&utm_campaign=dc%3D7%3Anz%7Clc%3D32311%3Apicton%7Cct%3Dcore%7Cln%3D39%3Ade%7Ctc%3Dall&utm_keyword=picton&utm_medium=paid_search&utm_query=picton&utm_source=bing">
+                            Aktivitäten in Picton buchen</a></li>
+                </ul>
 
         </article>
 
-        
+
     </main>
     <footer>
         <nav>
