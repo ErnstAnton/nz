@@ -7,7 +7,9 @@ let map = L.map('map', {
     zoom: zoom
 });
 
-
+L.control.scale({
+    imperial:false
+}).addTo(map);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
